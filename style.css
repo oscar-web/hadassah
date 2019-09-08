@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
@@ -16,7 +20,7 @@ p{
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -75,7 +79,7 @@ p{
 }
 
 .main{
-    padding-top: 12rem;
+    padding-top: 5.5rem;
 }
 
 
@@ -106,6 +110,7 @@ p{
 
     .navigation ul.show{
         display: block;
+        
     }
 
     .navigation ul li{
@@ -115,7 +120,7 @@ p{
     .navigation ul li a{
         display: block;
         padding: 0.5rem 0;
-        transition: all 0.4s linear;
+        transition: all 0.4s linear ;
         border-radius: 5px;
     }
     
@@ -124,3 +129,46 @@ p{
     }
     
 }
+
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%; }
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%; }
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%; }
+
+
+
+}
+
