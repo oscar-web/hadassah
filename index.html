@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos_login.css">
+
+    <script type="text/javascript">
+        function validar(){
+
+            var usuario = document.getElementById("usuario").value;
+            var contraseña = document.getElementById("pass").value;
+
+            if(usuario=="oscar" && contraseña=="123"){
+                location.href="principal.html";
+            }else{
+                alert("Incorrecto");
+            }
+        }
+    
+    </script>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2" class="logo"><h1>Welcome </h1></td>
+        </tr>
+        <tr>
+            <td><label for="">Usuario</label></td>
+            <td><input type="text" name="usuario" id="usuario"></td>
+        </tr>
+        <tr>
+            <td><label for="">Contraseña</label></td>
+            <td> <input type="password" name="pass" id="pass"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" name="btnVerifica" id="btnVerifica" value="Ingresar" onclick="validar()"></td>
+        </tr>
+    </table>
+    
+   
+
+</body>
+</html>
